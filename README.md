@@ -1,4 +1,4 @@
-Documentation IntBricks Integration Service (IIS). [Contact us](mailto:info@intbricks.com) for a product download link and a key.
+Documentation for IntBricks Integration Service (IIS). [Contact us](mailto:info@intbricks.com) for a product download link and a key.
 
 ## Concepts, System Design and User guide
 
