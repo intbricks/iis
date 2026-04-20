@@ -1,6 +1,7 @@
 Documentation for IntBricks Integration Service (IIS). [Contact us](mailto:info@intbricks.com) for a product download link and a key.
-
-IntBrick Integration Service (IIS) is a tool that can be used to connect heterogeneous systems together
+     
+## When to Use IntBricks Integration Service ?
+IntBricks Integration Service (IIS) is a tool that can be used to connect heterogeneous systems together
 using re-usable, configuration driven components. It enables users to build ETL (Extract, Transform, Load), 
 reverse-ETL, or ELT (Extract, Load, Transform) processes, supports connecting different protocols and data formats without the
 need to write a lot of glue code. The target end users are developers, sysadmins, administrative users without a lot of technical background.
