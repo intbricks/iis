@@ -1,5 +1,5 @@
 ## Tutorial 
-Welcome to the IntBrick Integration Service (IIS). In this tutorial, you will learn how to implement your first integration
+Welcome to the IntBrick Integration Service (IIS) tutorial. In this tutorial, you will learn how to implement your first integration
 using IIS. [Contact us](mailto:info@intbricks.com) for a product download link and a key.
  
 * [HCL](https://github.com/hashicorp/hcl/) based Domain-specific langauge ([DSL](https://en.wikipedia.org/wiki/Domain-specific_language)) is used to configure Integration Service logic.
