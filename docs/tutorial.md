@@ -60,4 +60,4 @@ collection of ordered connector references. `service` has a schedule for `in_flo
 ```
 $ @IIS_KEY=<product-key> @ACCESS_KEY=<aws_access_key> SECRET_KEY=<aws_secret_key> REGION=us-east-1 iis --host 127.0.0.1  --port 8080 --packages s3:<path/to/s3-download/dictory>
 ```
-* Next: you can read more about the configuration in [reference](reference.md), [standard library](stdlib.md) or review end-to-end working  
+* Next: you can read more about the configuration in [reference](reference.md), learn more about the [standard library](stdlib.md) or [review end-to-end working samples](../samples/samples.md).  
