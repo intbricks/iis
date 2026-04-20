@@ -1,7 +1,5 @@
 Documentation for IntBricks Integration Service (IIS). [Contact us](mailto:info@intbricks.com) for a product download link and a key.
 
-## Concepts, System Design and User guide
-
 IntBrick Integration Service (IIS) is a tool that can be used to connect heterogeneous systems together
 using re-usable, configuration driven components. It enables users to build ETL (Extract, Transform, Load), 
 reverse-ETL, or ELT (Extract, Load, Transform) processes, supports connecting different protocols and data formats without the
@@ -9,9 +7,7 @@ need to write a lot of glue code. The target end users are developers, sysadmins
 
 ![IntegrationService](docs/is.png)
 
-### System Design
-#### Concepts
-
+## Concepts
 * Integration Service can be configured using easy to domain specific langauge. The langauge is based on
   [HCL](https://github.com/hashicorp/hcl) and similar to Terraform, enabling easy development and maintenance of integrations. 
 * Connection - A connection represent a connection/communication channel to an external data source such as database connection, HTTP connection etc..
@@ -28,9 +24,9 @@ These concepts are shown in the following diagram.
 
 ![Concepts](docs/concepts.png)
 
-### Product Documentation 
+## Product Documentation 
 * [Tutorial](docs/tutorial.md)
 * [Reference](docs/reference.md)
 * [Standard Library](docs/stdlib.md)
      
-### Sample Repository
+## Sample Repository

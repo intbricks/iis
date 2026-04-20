@@ -58,6 +58,6 @@ collection of ordered connector references. `service` has a schedule for `in_flo
 * If you put the above configuration file into a file called: `s3-download.hcl`, and have necessary S3 bucket 
 (see [AWS S3 documentation](https://aws.amazon.com/s3/getting-started/) if you are new to S3), you can run the service with:
 ```
-$ @IIS_KEY=<product-key> @ACCESS_KEY=<aws_access_key> SECRET_KEY=<aws_secret_key> REGION=us-east-1 iis --host 127.0.0.1  --port 8080 --packages s3:<path/to/s3-download/dictory>
+$ @IIS_KEY=<product-key> @ACCESS_KEY=<aws_access_key> @SECRET_KEY=<aws_secret_key> REGION=us-east-1 iis --host 127.0.0.1  --port 8080 --packages s3:<path/to/s3-download/dictory>
 ```
 * Next: you can read more about the configuration in [reference](reference.md), learn more about the [standard library](stdlib.md) or [review end-to-end working samples](../samples/samples.md).  
