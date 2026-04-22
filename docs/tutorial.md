@@ -10,10 +10,23 @@ version = "1.0.0"
 
 package = "s3"
 
+variable "region" {
+  type    = string
+  default = "us-east-1"
+}
+
+output "print_region" {
+  description = "print output value"
+  entry {
+    name = "region"
+    value = var.region
+  }  
+}
+
 connection "aws" "s3_conn" {
   access_key = env("ACCESS_KEY")
   secret_key = env("SECRET_KEY")
-  region = "us-east-1"
+  region = var.region
 }
 
 connector "s3" "download_s3" {
@@ -41,6 +54,9 @@ service "s32local" {
 ```
 * Each config file starts with `version`. `version` defines the configuration langauge version, which is currently `1.0.0`.
 * Each config file belongs to a `package`. `pacakge` allows to group a configuration files together.
+* Variables can be declared using `variable`. `variable` has a `type` and an optional `default` value. Here a `variable` 
+named region is defined with a default value set to `us-east-1`.
+* Output can be used to display values. This can be used a tool to validate configurations. `print_region` output will display the value of `var.region` (variable region).
 * A `connection` defines the external connection. In this case it will be of type `aws` with the name `s3_conn`.
 * `aws` connection defines connection to an AWS resource with `access_key`, `secret_key` and `region`. Based on the type of 
 connection these parameters will differ. For example, a database connection will have the database specific parameters. 
