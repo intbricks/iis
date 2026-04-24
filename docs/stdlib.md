@@ -4,28 +4,34 @@ IntBricks Integration Service (IIS) standard library documentation.
 
 ### Numeric Functions
 
-| Function   | Description                                                                                                 | Example                                                                |
-|------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| `abs`      | Returns the absoute value of a value                                                                        | `abs(23) = 23`, `abs(0) = 0`                                           |
-| `add`      | Return the sum of two given numbers                                                                         | `sum(10,10) = 10`, `sum(10,-10) = 0`                                   |
-| `cbrt`     | Returns the cubic root of a value                                                                           | `cbrt(27) = 3`                                                         |
-| `ceil`     | Rreturns the closest whole number that is greater than or equal to the given value, which may be a fraction | `ceil(5) = 5`, `ceil(5.1) = 6`                                         |
-| `div`      | Divide the first number by the second number                                                                | `div(10,2) = 5`, `div(30,-5) = -6`                                     |
-| `floor`    | Returns the closest whole number that is less than or equal to the given value, which may be a fraction     | `floor(5) = 5`, `floor(4.9) = 4`                                       |
-| `log`      | Returns the logarithm of a given number in a given base                                                     | `log(50, 10) = 1.6989700043360185`                                     |   
-| `max`      | Returns the maximum from a two or more input numbers                                                        | `max(12, 54, 3) = 54`, `max([12, 54, 3]...) = 54`                      |
-| `min`      | Return the minimum from a two or more input numbers                                                         | `min(12, 54, 3) = 3`, `min([12, 54, 3]...) = 3`                        |
-| `mul` | Multiple two numbers by each other                                                                          | `multiply(10,10) = 100`, `multiply(10,-10) = -100`                     |
-| `parseint` | Parses a the given string represenation of an integer in the provided base and return the result            | `parseint("100", 10) = 100`, `parseint("1011111011101111", 2) = 48879` |
-| `pow`      | Calcuates the expoonent, first argument to the power of second argument                                     | `pow(5, 3) = 125`                                                      |
-| `signum`   | Determines the sign of a number, returning -1, 0, 1 for negative, zero, positive numbers respectively       | `signum(-13) = -1`, `signum(0) = 0` , `signum(13) = 1`                 |
-| `sub`      | Returns the difference between two given numbers                                                            | `sub(10,2) = 8`, `sub(10,20) = -10`                                    |
+| Function   | Description                                                                                                | Example                                                                |
+|------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| `abs`      | Returns the absoute value of a value                                                                       | `abs(23) = 23`, `abs(0) = 0`                                           |
+| `acos`     | Returns the arc cosine of the given value(range -1 to 1)                                                   | `acos(0.25) = 1.318116071652818`                                                        |
+| `add`      | Return the sum of two given numbers                                                                        | `sum(10,10) = 10`, `sum(10,-10) = 0`                                   |
+| `asin`     | Return the arc sine of the given number                                                                    | `asin(0) = 0`, `asin(1) = 1.5707963267948966`                          |
+| `cbrt`     | Returns the cubic root of a value                                                                          | `cbrt(27) = 3`                                                         |
+| `ceil`     | Returns the closest whole number that is greater than or equal to the given value, which may be a fraction | `ceil(5) = 5`, `ceil(5.1) = 6`                                         |
+| `cos`      | Returns the cosine of the given number                                                                     | `cos(0) = 1`                                                           |
+| `div`      | Divide the first number by the second number                                                               | `div(10,2) = 5`, `div(30,-5) = -6`                                     |
+| `floor`    | Returns the closest whole number that is less than or equal to the given value, which may be a fraction    | `floor(5) = 5`, `floor(4.9) = 4`                                       |
+| `log`      | Returns the logarithm of a given number in a given base                                                    | `log(50, 10) = 1.6989700043360185`                                     |   
+| `max`      | Returns the maximum from a two or more input numbers                                                       | `max(12, 54, 3) = 54`, `max([12, 54, 3]...) = 54`                      |
+| `min`      | Return the minimum from a two or more input numbers                                                        | `min(12, 54, 3) = 3`, `min([12, 54, 3]...) = 3`                        |
+| `mul`      | Multiple two numbers by each other                                                                         | `multiply(10,10) = 100`, `multiply(10,-10) = -100`                     |
+| `parseint` | Parses a the given string represenation of an integer in the provided base and return the result           | `parseint("100", 10) = 100`, `parseint("1011111011101111", 2) = 48879` |
+| `pow`      | Calcuates the expoonent, first argument to the power of second argument                                    | `pow(5, 3) = 125`                                                      |
+| `pi`       | Returns the value of Pi                                                                                    | `pi() = 3.141592653589793`                                             |
+| `signum`   | Determines the sign of a number, returning -1, 0, 1 for negative, zero, positive numbers respectively      | `signum(-13) = -1`, `signum(0) = 0` , `signum(13) = 1`                 |
+| `sin`      | Returns the sine of a given number                                                                         | `sin(0) = 0`                                                           |
+| `sub`      | Returns the difference between two given numbers                                                           | `sub(10,2) = 8`, `sub(10,20) = -10`                                    |
+| `tan`      | Returns the tagnet of the given number                                                                     | `tan(1) = 1.5430806348152437`                                                            |
 
 ### String Functions
 
 | Function           | Description                                                                              | Example                                                                                                                             |
 |--------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `appendifmissing`  | Appends a suffix to the end of the string if not present                                 |                                                                                                                                     |
+| `appendifmissing`  | Appends a suffix to the end of the string if not present                                 | `appendifmissing("abc","xyz","") = "abc"`, `appendifmissing("abcXYZ", "xyz", "mno") = "abcXYZ"`                                             |
 | `capitalize`       |                                                                                          |                                                                                                                                     |
 | `chomp`            | Remove new line character(s) from end of a string                                        | `chomp("hello\n\n") = hello`, `chomp("hello\r\n") = hello`                                                                          |
 | `chop`             | Remove the last character from a string                                                  |
