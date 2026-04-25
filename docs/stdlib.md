@@ -7,7 +7,7 @@ IntBricks Integration Service (IIS) standard library documentation.
 | Function   | Description                                                                                                | Example                                                                |
 |------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | `abs`      | Returns the absoute value of a value                                                                       | `abs(23) = 23`, `abs(0) = 0`                                           |
-| `acos`     | Returns the arc cosine of the given value(range -1 to 1)                                                   | `acos(0.25) = 1.318116071652818`                                                        |
+| `acos`     | Returns the arc cosine of the given value(range -1 to 1)                                                   | `acos(0.25) = 1.318116071652818`                                       |
 | `add`      | Return the sum of two given numbers                                                                        | `sum(10,10) = 10`, `sum(10,-10) = 0`                                   |
 | `asin`     | Return the arc sine of the given number                                                                    | `asin(0) = 0`, `asin(1) = 1.5707963267948966`                          |
 | `cbrt`     | Returns the cubic root of a value                                                                          | `cbrt(27) = 3`                                                         |
@@ -25,16 +25,17 @@ IntBricks Integration Service (IIS) standard library documentation.
 | `signum`   | Determines the sign of a number, returning -1, 0, 1 for negative, zero, positive numbers respectively      | `signum(-13) = -1`, `signum(0) = 0` , `signum(13) = 1`                 |
 | `sin`      | Returns the sine of a given number                                                                         | `sin(0) = 0`                                                           |
 | `sub`      | Returns the difference between two given numbers                                                           | `sub(10,2) = 8`, `sub(10,20) = -10`                                    |
-| `tan`      | Returns the tagnet of the given number                                                                     | `tan(1) = 1.5430806348152437`                                                            |
+| `tan`      | Returns the tagnet of the given number                                                                     | `tan(1) = 1.5430806348152437`                                          |
 
 ### String Functions
 
 | Function           | Description                                                                              | Example                                                                                                                             |
 |--------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `appendifmissing`  | Appends a suffix to the end of the string if not present                                 | `appendifmissing("abc","xyz","") = "abc"`, `appendifmissing("abcXYZ", "xyz", "mno") = "abcXYZ"`                                             |
-| `capitalize`       |                                                                                          |                                                                                                                                     |
+| `appendifmissing`  | Appends a suffix to the end of the string if not present                                 | `appendifmissing("abc","xyz","") = "abc"`, `appendifmissing("abcXYZ", "xyz", "mno") = "abcXYZ"`                                     |
+| `capitalize`       | Convert unicode string to uppercase                                                      | `capitalize("hello") = "HELLO"`                                                                                                     |
+| `can`              | Evaluate of the expression can be evaluated                                              | `can(pi()) = true`, `can(pii()) = false` Note: no standard library function called `pii().                                          |
 | `chomp`            | Remove new line character(s) from end of a string                                        | `chomp("hello\n\n") = hello`, `chomp("hello\r\n") = hello`                                                                          |
-| `chop`             | Remove the last character from a string                                                  |
+| `chop`             | Remove the last character from a string                                                  | `chop("hello") = hello`, `chop("\n") = ""`, `chop("\r\n") = ""`                                                                     
 | `center`           | Centers a string in larger string of size `size` using a space character(` `)            |                                                                                                                                     |
 | `empty`            | Check if a string contains text                                                          |                                                                                                                                     |
 | `endswith`         |                                                                                          |                                                                                                                                     |
@@ -49,7 +50,7 @@ IntBricks Integration Service (IIS) standard library documentation.
 | `lastindexof`      | Check the last index of a character                                                      |                                                                                                                                     |
 | `join`             | Produce a string concatinating all the elements of the speficied list with the seperator | `join(" ", ["hello", "world"]) = hello world`                                                                                       |
 | `lower`            |                                                                                          |                                                                                                                                     |
-| `leftpad`          |                                                                                          |                                                                                                                                     |
+| `leftpad`          | Left pad a string with specified string with number of time(s)                           | `leftpad("", 3, "z") = "zzz"`, `leftpad("bat", 5, "yz")  = "yzbat"`                                                                 |
 | `prependifmissing` | Prepends a prefix to the start of the string if not present                              |                                                                                                                                     |
 | `regex`            |                                                                                          |                                                                                                                                     |
 | `regexall`         |                                                                                          |                                                                                                                                     |
@@ -75,7 +76,7 @@ IntBricks Integration Service (IIS) standard library documentation.
 | `trimprefix`       |                                                                                          |                                                                                                                                     |
 | `trimsuffix`       |                                                                                          |                                                                                                                                     |
 | `trimspace`        |                                                                                          |                                                                                                                                     |
-| `upper`            |                                                                                          |                                                                                                                                     |
+| `upper`            | Convert unicode string to uppercase                                                      | `upper("hello") = "HELLO"`                                                                                                          |
 
 ### Collection Functions
 
