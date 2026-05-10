@@ -29,88 +29,88 @@ IntBricks Integration Service (IIS) standard library documentation.
 
 ### String Functions
 
-| Function           | Description                                                                              | Example                                                                                                                             |
-|--------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `appendifmissing`  | Appends a suffix to the end of the string if not present                                 | `appendifmissing("abc","xyz","") = "abc"`, `appendifmissing("abcXYZ", "xyz", "mno") = "abcXYZ"`                                     |
-| `can`              | Evaluate of the expression can be evaluated                                              | `can(pi()) = true`, `can(pii()) = false` Note: no standard library function called `pii().                                          |
-| `chomp`            | Remove new line character(s) from end of a string                                        | `chomp("hello\n\n") = hello`, `chomp("hello\r\n") = hello`                                                                          |
-| `chop`             | Remove the last character from a string                                                  | `chop("hello") = hell`, `chop("\n") = ""`, `chop("\r\n") = ""`                                                                      
-| `center`           | Centers a string in larger string of size `size` using a space character(` `)            | `center("ab", 4) = "  ab  "`, `center("abcd", 2) = "abcd"`, `center("a", 4) = " a  "`                                               |
-| `empty`            | Check if a string contains text                                                          |                                                                                                                                     |
-| `endswith`         | Tests if a string end with a specified suffix                                            | `endswith("abcdef","def") = true`, `endswith("ABCDEF", "def") = false`, `endwith("ABCDEF", upper("def")) = true`                    |
-| `format`           | Produce a formatted string according to the format specifier                             | `format("hello in Sinhala: , %s!", "ආයුබෝවන්") = hello in Sinhala: ආයුබෝවන්!`, `format("Hello, %s!", var.greeting) = Hello, there!` |
-| `formatlist`       |                                                                                          |                                                                                                                                     |
-| `indent`           | Add specified number of spaces in a multi-line funciton, except first line               |                                                                                                                                     |
-| `indexof`          | Check the index of a chracter                                                            |                                                                                                                                     |
-| `isalpha`          |                                                                                          |                                                                                                                                     |
-| `isnumeric`        |                                                                                          |                                                                                                                                     |
-| `iswhitespace`     |                                                                                          |                                                                                                                                     |
-| `iswhitespace`     |                                                                                          |                                                                                                                                     |
-| `lastindexof`      | Check the last index of a character                                                      |                                                                                                                                     |
-| `join`             | Produce a string concatinating all the elements of the speficied list with the seperator | `join(" ", ["hello", "world"]) = hello world`                                                                                       |
-| `lower`            |                                                                                          |                                                                                                                                     |
-| `leftpad`          | Left pad a string with specified string with number of time(s)                           | `leftpad("bat", 5, "yz")  = "yzbat"`, `leftpad("bat", 3, "yz")  = "bat"`                                                            |
-| `prependifmissing` | Prepends a prefix to the start of the string if not present                              |                                                                                                                                     |
-| `regex`            |                                                                                          |                                                                                                                                     |
-| `regexall`         |                                                                                          |                                                                                                                                     |
-| `replace`          |                                                                                          |                                                                                                                                     |
-| `repeat`           |                                                                                          |                                                                                                                                     |
-| `remove`           | Remove part of a string, if avaiable                                                     |                                                                                                                                     |
-| `reverse`          |                                                                                          |                                                                                                                                     |
-| `reversedelimited` |                                                                                          |                                                                                                                                     | 
-| `rightpad`         | Right pad a string with specified string with number of time(s)                          | `rightpad("bat", 5, "yz")  = "batyz"`, `rightpad("bat", 3, "yz")  = "bat"`                                                          |
-| `rotate`           |                                                                                          |                                                                                                                                     |  
-| `split`            |                                                                                          |                                                                                                                                     |
-| `startswith`       |                                                                                          |                                                                                                                                     |
-| `strcontains`      |                                                                                          |                                                                                                                                     |
-| `strrev`           |                                                                                          |                                                                                                                                     |
-| `swapcase`         |                                                                                          |                                                                                                                                     |
-| `substr`           |                                                                                          |                                                                                                                                     |
-| `substrbefore`     |                                                                                          |                                                                                                                                     |
-| `substrafter`      |                                                                                          |                                                                                                                                     |
-| `substrbetween`    |                                                                                          |                                                                                                                                     |
-| `templatestring`   |                                                                                          |                                                                                                                                     |
-| `title`            |                                                                                          |                                                                                                                                     |
-| `trim`             |                                                                                          |                                                                                                                                     |
-| `trimprefix`       |                                                                                          |                                                                                                                                     |
-| `trimsuffix`       |                                                                                          |                                                                                                                                     |
-| `trimspace`        |                                                                                          |                                                                                                                                     |
-| `upper`            | Convert unicode string to uppercase                                                      | `upper("hello") = "HELLO"`                                                                                                          |
+| Function           | Description                                                                                   | Example                                                                                                                             |
+|--------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| `appendifmissing`  | Appends a suffix to the end of the string if not present                                      | `appendifmissing("abc","xyz","") = "abc"`, `appendifmissing("abcXYZ", "xyz", "mno") = "abcXYZ"`                                     |
+| `can`              | Evaluate of the expression can be evaluated                                                   | `can(pi()) = true`, `can(pii()) = false` Note: no standard library function called `pii().                                          |
+| `chomp`            | Remove new line character(s) from end of a string                                             | `chomp("hello\n\n") = hello`, `chomp("hello\r\n") = hello`                                                                          |
+| `chop`             | Remove the last character from a string                                                       | `chop("hello") = hell`, `chop("\n") = ""`, `chop("\r\n") = ""`                                                                      
+| `center`           | Centers a string in larger string of size `size` using a space character(` `)                 | `center("ab", 4) = "  ab  "`, `center("abcd", 2) = "abcd"`, `center("a", 4) = " a  "`                                               |
+| `empty`            | Check if a string contains text                                                               | `empty("") = true`, `empty("hello") = false`                                                                                        |
+| `endswith`         | Tests if a string end with a specified suffix                                                 | `endswith("abcdef","def") = true`, `endswith("ABCDEF", "def") = false`, `endwith("ABCDEF", upper("def")) = true`                    |
+| `format`           | Produce a formatted string according to the format specifier                                  | `format("hello in Sinhala: , %s!", "ආයුබෝවන්") = hello in Sinhala: ආයුබෝවන්!`, `format("Hello, %s!", var.greeting) = Hello, there!` |
+| `formatlist`       |                                                                                               |                                                                                                                                     |
+| `indent`           | Add specified number of spaces in a multi-line funciton, except first line                    |                                                                                                                                     |
+| `indexof`          | Check the index of a chracter                                                                 |                                                                                                                                     |
+| `isalpha`          |                                                                                               |                                                                                                                                     |
+| `isnumeric`        |                                                                                               |                                                                                                                                     |
+| `iswhitespace`     |                                                                                               |                                                                                                                                     |
+| `iswhitespace`     |                                                                                               |                                                                                                                                     |
+| `lastindexof`      | Check the last index of a character                                                           |                                                                                                                                     |
+| `join`             | Produce a string concatinating all the elements of the speficied list with the seperator      | `join(" ", ["hello", "world"]) = hello world`                                                                                       |
+| `lower`            |                                                                                               |                                                                                                                                     |
+| `leftpad`          | Left pad a string with specified string with number of time(s)                                | `leftpad("bat", 5, "yz")  = "yzbat"`, `leftpad("bat", 3, "yz")  = "bat"`                                                            |
+| `prependifmissing` | Prepends a prefix to the start of the string if not present                                   |                                                                                                                                     |
+| `regex`            |                                                                                               |                                                                                                                                     |
+| `regexall`         |                                                                                               |                                                                                                                                     |
+| `replace`          |                                                                                               |                                                                                                                                     |
+| `repeat`           |                                                                                               |                                                                                                                                     |
+| `remove`           | Remove part of a string, if avaiable                                                          |                                                                                                                                     |
+| `reverse`          |                                                                                               |                                                                                                                                     |
+| `reversedelimited` |                                                                                               |                                                                                                                                     | 
+| `rightpad`         | Right pad a string with specified string with number of time(s)                               | `rightpad("bat", 5, "yz")  = "batyz"`, `rightpad("bat", 3, "yz")  = "bat"`                                                          |
+| `rotate`           |                                                                                               |                                                                                                                                     |  
+| `split`            |                                                                                               |                                                                                                                                     |
+| `startswith`       |                                                                                               |                                                                                                                                     |
+| `strcontains`      |                                                                                               |                                                                                                                                     |
+| `strrev`           |                                                                                               |                                                                                                                                     |
+| `swapcase`         |                                                                                               |                                                                                                                                     |
+| `substr`           |                                                                                               |                                                                                                                                     |
+| `substrbefore`     |                                                                                               |                                                                                                                                     |
+| `substrafter`      |                                                                                               |                                                                                                                                     |
+| `substrbetween`    |                                                                                               |                                                                                                                                     |
+| `templatestring`   |                                                                                               |                                                                                                                                     |
+| `title`            |                                                                                               |                                                                                                                                     |
+| `trim`             |                                                                                               |                                                                                                                                     |
+| `trimprefix`       |                                                                                               |                                                                                                                                     |
+| `trimsuffix`       |                                                                                               |                                                                                                                                     |
+| `trimspace`        |                                                                                               |                                                                                                                                     |
+| `upper`            | Convert unicode string to uppercase                                                           | `upper("hello") = "HELLO"`                                                                                                          |
 
 ### Collection Functions
 
-| Function          | Description | Example |
-|-------------------|-------------|---------|
-| `alltrue`         |             |         |
-| `anytrue`         |             |         |
-| `chunklist`       |             |         |
-| `colesce`         |             |         |
-| `colescelist`     |             |         |
-| `compact`         |             |         |
-| `concat`          |             |         |
-| `contains`        |             |         |
-| `distinct`        |             |         |
-| `element`         |             |         |
-| `flattern`        |             |         |
-| `index`           |             |         |
-| `keys`            |             |         |
-| `len`             |             |         |
-| `lookup`          |             |         |
-| `matchkeys`       |             |         |
-| `merge`           |             |         |
-| `one`             |             |         |
-| `range`           |             |         |
-| `reverse`         |             |         |
-| `setintersection` |             |         |
-| `setproduct`      |             |         |
-| `setsubtract`     |             |         |
-| `setunion`        |             |         |
-| `slice`           |             |         |
-| `sort`            |             |         |
-| `sum`             |             |         |
-| `transpose`       |             |         |
-| `values`          |             |         |
-| `zipmap`          |             |         |
+| Function          | Description                                                                                   | Example                                                           |
+|-------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| `alltrue`         |                                                                                               |                                                                   |
+| `anytrue`         |                                                                                               |                                                                   |
+| `chunklist`       |                                                                                               |                                                                   |
+| `colesce`         |                                                                                               |                                                                   |
+| `colescelist`     |                                                                                               |                                                                   |
+| `compact`          | Takes a list of strings and returns a new list with any null or empty string elements removed | `compact(["a", "", "b", "c"]) = ["a", "b", "c"]`                  |
+| `concat`          |                                                                                               |                                                                   |
+| `contains`        | Check if the the value is in the list                                                         | `contains(["a", "b", "c"], "a") = true`                           |
+| `distinct`        | Return a new list with duplicates removed                                                     | `distinct(["a", "b", "a", "c", "d", "b"]) = ["a", "b", "c", "d"]` |
+| `element`         |                                                                                               |                                                                   |
+| `flattern`        |                                                                                               |                                                                   |
+| `index`           |                                                                                               |                                                                   |
+| `keys`            |                                                                                               |                                                                   |
+| `len`             |                                                                                               |                                                                   |
+| `lookup`          |                                                                                               |                                                                   |
+| `matchkeys`       |                                                                                               |                                                                   |
+| `merge`           |                                                                                               |                                                                   |
+| `one`             |                                                                                               |                                                                   |
+| `range`           |                                                                                               |                                                                   |
+| `reverse`         |                                                                                               |                                                                   |
+| `setintersection` |                                                                                               |                                                                   |
+| `setproduct`      |                                                                                               |                                                                   |
+| `setsubtract`     |                                                                                               |                                                                   |
+| `setunion`        |                                                                                               |                                                                   |
+| `slice`           |                                                                                               |                                                                   |
+| `sort`            |                                                                                               |                                                                   |
+| `sum`             |                                                                                               |                                                                   |
+| `transpose`       |                                                                                               |                                                                   |
+| `values`          |                                                                                               |                                                                   |
+| `zipmap`          |                                                                                               |                                                                   |
 
 ### Encoding Functions
 
