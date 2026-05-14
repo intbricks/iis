@@ -120,12 +120,12 @@ IntBricks Integration Service (IIS) standard library documentation.
 
 ### Filesystem Functions
 
-| Function     | Description | Example |
-|--------------|-------------|---------|
-| `abspath`    |             |         |
-| `dirname`    |             |         |
-| `basename`   |             |         |
-| `file`       |             |         |
+| Function     | Description                                                                     | Example                         |
+|--------------|---------------------------------------------------------------------------------|---------------------------------|
+| `abspath`    | Takes a string containing a filesystem path and converts it to an absolute path |                                 |
+| `dirname`    | Remove last portion from a path                                                 | `dirname("foo/bar/baz.txt") = "foo/bar"` |
+| `basename`   | Return the base of a path                                                       |                                 |
+| `file`       | Read file content as string                                                     |                                 |
 
 ### Date/Time Functions
 
