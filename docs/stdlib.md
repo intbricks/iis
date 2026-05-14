@@ -108,13 +108,15 @@ IntBricks Integration Service (IIS) standard library documentation.
 
 ### Encoding Functions
 
-| Function       | Description | Example |
-|----------------|-------------|---------| 
-| `base64decode` |             |         |
-| `base64encode` |             |         |
-| `csvdecode`    |             |         |
-| `jsondecode`   |             |         |
-| `urlencode`    |             |         |
+| Function       | Description                                                     | Example                                            |
+|----------------|-----------------------------------------------------------------|----------------------------------------------------| 
+| `base64decode` | Convert a base64 decode string back to it's original            | `base64decode("SGVsbG8gV29ybGQ=") = "Hello World"` |
+| `base64encode` | Produce a base64 encoded string from the input                  | `base64encode("Hello World") = SGVsbG8gV29ybGQ=`                   |
+| `base64bizp`   | Compress a string using Gzip and convert to base64              |                                                    |
+| `csvdecode`    | Produce a map representing CSV data                             |                                                    |
+| `jsondecode`   | Produce a JSON object from input JSON string                    |                                                    |
+| `jsonencode`   | Encodes a given value to a string object from input JSON string |                                                    |
+| `urlencode`    | Applies URL encoding to a given string                          |                                                    |
 
 ### Filesystem Functions
 
