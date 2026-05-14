@@ -124,11 +124,8 @@ IntBricks Integration Service (IIS) standard library documentation.
 |--------------|-------------|---------|
 | `abspath`    |             |         |
 | `dirname`    |             |         |
-| `pathexpand` |             |         |
 | `basename`   |             |         |
 | `file`       |             |         |
-| `fileexists` |             |         |
-| `filebase64` |             |         |
 
 ### Date/Time Functions
 
